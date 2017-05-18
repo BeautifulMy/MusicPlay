@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:minWidth="1500dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/selector_list_item"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:padding="15dp"
+        android:minWidth="1500dp"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@mipmap/video_default_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text="三生三世十里桃花"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:textSize="14sp"
+            android:textColor="#8fff"
+            android:layout_marginTop="4dp"
+            android:text="00:23"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_size"
+        android:textSize="14sp"
+        android:textColor="#8fff"
+        android:layout_marginTop="3dp"
+        android:text="3.8M"
+        android:maxLines="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <View
+        android:background="#8fff"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+</LinearLayout>

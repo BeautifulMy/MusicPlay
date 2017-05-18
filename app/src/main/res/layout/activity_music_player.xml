@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@mipmap/splash_bg"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/layout_title"/>
+    <RelativeLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_anim"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/music_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#afff"
+        android:textSize="18sp"
+        android:text="刘德华"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/iv_anim"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <!--歌词View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <TextView
+        android:id="@+id/tv_music_time"
+        android:layout_margin="15dp"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:text="00:00/00:00"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/sb_music"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_playmode"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_btn_playmode_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_music_pre"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_btn_audio_pre"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_music_play"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_btn_audio_play"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_music_next"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_btn_audio_next"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@drawable/selector_btn_audio_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
